@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:new_todo/app_main.dart';
 import 'package:new_todo/models/note_database.dart';
