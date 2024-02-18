@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_todo/components/drawer_tile.dart';
+import 'package:new_todo/screens/settings_screen.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -29,7 +30,15 @@ class MyDrawer extends StatelessWidget {
           DrawerTile(
             title: "Configurações",
             leading: const Icon(Icons.settings),
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SettingScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),
