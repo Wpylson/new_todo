@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:new_todo/components/drawer.dart';
 import 'package:new_todo/models/note.dart';
 import 'package:new_todo/models/note_database.dart';
 import 'package:provider/provider.dart';
@@ -145,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onPressed: createNote,
         child: const Icon(Icons.add),
       ),
-      drawer: Drawer(),
+      drawer: const MyDrawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
